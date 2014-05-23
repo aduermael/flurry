@@ -20,15 +20,13 @@ RUN npm install forever -g;
 
 # install redis
 RUN apt-get update -y
-# RUN apt-get upgrade -y
 RUN apt-get install redis-server -y
 
-EXPOSE 80:80
-EXPOSE 6379
+EXPOSE 80
 
 ENV HOME /root
 WORKDIR /srv
 
 # Define default command.
-CMD ["/bin/bash"]
+CMD ["/bin/bash","/srv/start.sh"]
 

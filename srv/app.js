@@ -124,10 +124,7 @@ function collect(req,res)
 						{
 							error(res,"Can't get reward quantities.");
 						}
-						
-						
 					});
-						
 				});
 			}
 			else
@@ -140,7 +137,6 @@ function collect(req,res)
 	{
 		error(res,"User ID is required.");
 	}
-
 }
 
 
