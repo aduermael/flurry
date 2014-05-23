@@ -1,4 +1,8 @@
 flurry
 ======
 
-A Docker container that you can use to validate Flurry rewards. (http://www.flurry.com)
+A callback server for Flurry, running in a Docker container. 
+(http://support.flurry.com/index.php?title=Publisher/GettingStarted/ManageRewards)
+
+_Run the container:_
+docker run -e "SECRET=<SECRET_KEY>" -t -i -d -p <PORT>:80 <IMAGE_NAME>
